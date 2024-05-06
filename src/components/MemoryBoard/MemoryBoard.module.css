@@ -1,0 +1,10 @@
+.board {
+    width: 100vw;
+
+    padding-block: 50px;
+    row-gap: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+}

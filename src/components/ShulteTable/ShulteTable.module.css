@@ -1,0 +1,40 @@
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.element {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    font-size: 20px;
+
+    padding: 20px;
+}
+
+.row:nth-child(2n) > .element:nth-child(2n) {
+    background-color: var(--cell-color);
+}
+
+.row:nth-child(2n-1) > .element:nth-child(2n-1) {
+    background-color: var(--cell-color);
+}
+
+.element-selected {
+    border: 1px solid red;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}

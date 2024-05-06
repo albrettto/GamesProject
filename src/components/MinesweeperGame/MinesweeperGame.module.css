@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#closed {
+    background: var(--cell-color-closed);
+    color: transparent;
+}
+
+#opened {
+    background: var(--cell-color);
+}
+
+#flagged {
+    background: var(--cell-color-closed);
+    background-image: url('../../icons/flag.svg');
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+}

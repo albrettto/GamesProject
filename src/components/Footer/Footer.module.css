@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 100px;
+}
+
+.buttons-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.link-icon:hover {
+    transition: 0.2s ease-in-out;
+    transform: rotateZ(5deg);
+}
+
+.button-reset {
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.button-reset:hover {
+    background-color: var(--button-hover);
+}

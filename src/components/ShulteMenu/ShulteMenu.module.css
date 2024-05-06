@@ -1,0 +1,39 @@
+.menu {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    --color-typo-secondary: var(--text-color);
+    --color-control-bg-primary:var(--text-color);
+    --color-control-bg-primary-hover:var(--button-hover);
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    font-size: 15px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+}

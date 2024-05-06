@@ -1,0 +1,67 @@
+.welcomeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+
+    font-size: 40px;
+    background-color: transparent;
+    background-image: none;
+}
+
+.entry {
+    text-align: center;
+    min-height: 50vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%
+
+}
+
+#dots {
+    background-color: var(--bg-color);
+    background-repeat: no-repeat,repeat;
+    background-image: linear-gradient(var(--bg-color),var(--bg-color)),radial-gradient(circle,rgba(0,0,0,0.2) 30%,rgba(0,0,0,0) 31%);
+    background-size: 80% 11em,1em 1em;
+    background-position: 0 50%,50% 50%;
+    font-size: 10px;
+}
+
+
+
+#dots:before,#dots:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 80%;
+    top: 50%
+}
+
+#dots:before {
+    width: 4.5em;
+    height: 12em;
+    margin-left: -1em;
+    margin-top: -5.6em;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg,white 40%,rgba(255,255,255,0) 40%),linear-gradient(45deg,#a9a9a9 40%,rgba(0,0,0,0) 40%),linear-gradient(135deg,white 40%,rgba(255,255,255,0) 40%),linear-gradient(135deg,#a9a9a9 40%,rgba(0,0,0,0) 40%),linear-gradient(135deg,rgba(0,0,0,0.1) 40%,rgba(0,0,0,0) 40%),linear-gradient(to right,#ddd 20%,white 20%),linear-gradient(#a9a9a9,#a9a9a9),linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-size: 3.2em 3em,3.2em 3em,3.2em 3em,3.2em 3em,1.3em 5em,2.6em 10.8em,3em 11.2em,2.7em 11.2em;
+    background-position: 2.5em 3.1em,2.5em 2.8em,2.5em 5.1em,2.5em 5.4em,3em 6.5em,.2em .2em,0 0,.5em .2em
+}
+
+#dots:after {
+    box-sizing: border-box;
+    width: 23em;
+    height: 2.8em;
+    margin-left: 2.8em;
+    margin-top: -1.4em;
+    background-image: linear-gradient(to top,#ff8c00 50%,#ffa500 50%);
+    border-radius: 0 .8em .8em 0;
+    border: .2em solid #ff6347;
+    box-shadow: .5em 1.5em 0 rgba(0,0,0,0.1)
+}

@@ -1,0 +1,50 @@
+nav {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-color);
+    background-image: var(--bg-grain);
+    z-index: 9;
+}
+
+.sticky {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.logo-link{
+    font-family: "Manrope-Bold", sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-element_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.mode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+

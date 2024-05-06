@@ -1,0 +1,90 @@
+:root {
+  --pink: #ffb39b;
+  --yellow: #fabb19;
+  --green: #17875a;
+  --red: #ff5f5f;
+  --turquoise: #00ced4;
+  --blue-light: #90afdd;
+  --blue: #5d73a3;
+  --blue-dark: #314a6d;
+  --navy: #14303f;
+  --grey-med: #b5bac6;
+  --grey-light: #ebecf0;
+
+  --bg-grain: url("../public/images/bg-grain.png");
+  --bg-color: var(--grey-light);
+  --text-color: var(--navy);
+  --border-color: var(--blue-light);
+  --grid-color: rgba(181,186,198,0.3);
+  --text-decoration: #17875a;;
+  --link-bg: rgba(20,48,63,0.08);
+  --border-width: 1px;
+  --button-hover: #5d73a3;
+  --cell-color: var(--grey-med);
+  --cell-color-closed: var(--blue-light);
+  --base-card-color:var(--grey-med);
+  --modified-card-color:var(--red);
+  --doubleModified-card-color:var(--yellow);
+
+
+
+  --font-xs: .9rem;
+  --font-sm: 1rem;
+  --font-base: 1.2rem;
+  --font-md: 1.6rem;
+  --font-lg: 2.2rem;
+  --font-xl: 3rem;
+  --font-xxl: 3.5rem;
+  --font-xxxl: 4.5rem;
+  --font-xxxxl: 5.5rem;
+  --selection-bg-light: #fabb19;
+  --selection-bg-dark: #17875a;
+  --selection-text-light: var(--text-color);
+  --selection-text-dark: white;
+  --focus-text-light: #14303f;
+  --focus-text-dark: white;
+  --focus-bg-light: white;
+  --focus-bg-dark: black;
+  --focus-outline-light: #5d73a3;
+  --focus-outline-dark: #fabb19;
+
+
+
+  --selection-bg: var(--selection-bg-light);
+  --selection-text: var(--selection-text-light);
+  --focus-text: var(--focus-text-light);
+  --focus-bg: var(--focus-bg-light);
+  --focus-outline: var(--focus-outline-light);
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url("../public/fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url("../public/fonts/Manrope-Bold.ttf");
+}
+
+
+* {
+  background-color: var(--bg-color);
+  background-image: var(--bg-grain);
+  color: var(--text-color);
+
+  font-family: "Manrope-Regular", sans-serif;
+}
+
+.dark-mode {
+  --bg-grain: url("../public/images/bg-grain-dark.png");
+  --bg-color: var(--navy);
+  --text-color: var(--pink);
+  --border-color: var(--blue);
+  --grid-color: rgba(93,115,163,0.3);
+  --link-bg: rgba(0,0,0,0.2);
+  --button-hover: #00ced4;
+  --cell-color: var(--blue-dark);
+  --cell-color-closed: var(--blue);
+  --modified-card-color:var(--pink);
+}

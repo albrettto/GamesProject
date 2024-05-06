@@ -1,0 +1,103 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid var(--border-color);
+}
+
+.images {
+    width: 100%;
+    padding-block: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    width: 350px;
+    height: 350px;
+}
+
+.link {
+    border-top: var(--border-width) solid var(--grid-color);
+
+    color: var(--text-color);
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: var(--text-decoration);
+    text-decoration-thickness: var(--border-width);
+    text-underline-offset: 2px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-block: 20px;
+
+
+    background-color: var(--link-bg);
+}
+
+.base {
+}
+
+.modified {
+    background: var(--modified-card-color);
+
+}
+
+.modified::before {
+    content: '•';
+    color: var(--green);
+    font-size: 30px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+.doubleModified {
+    background: var(--doubleModified-card-color);
+
+}
+
+.doubleModified::before {
+    content: '••';
+    color: var(--green);
+    font-size: 30px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+.normal {
+    flex: 1 30%;
+}
+
+.enlarged {
+    flex: 2 50%;
+}
+
+.enlarged::after {
+    content: '•';
+    color: var(--turquoise);
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.doubleEnlarged {
+    flex: 2 100%;
+}
+
+.doubleEnlarged::after {
+    content: '••';
+    color: var(--turquoise);
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}

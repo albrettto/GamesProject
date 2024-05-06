@@ -1,0 +1,100 @@
+.card {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    z-index: 5;
+    border-radius: 15px;
+
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.front {
+    background-image: radial-gradient(var(--border-color) 9.5px, transparent 9.5px);
+    background-size: 30px 30px;
+    background-color: var(--text-color);
+    border-radius: 15px;
+}
+
+.front:hover {
+    transform: scale(102%);
+}
+
+.back {
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    background: var(--border-color);
+    background-size: 150px 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-rotated {
+    transform: rotateY(180deg);
+}
+
+.a{
+    background-image: url("../../images/memory/a.svg");
+}
+
+.b{
+    background-image: url("../../images/memory/b.svg");
+}
+
+.c{
+    background-image: url("../../images/memory/c.svg");
+}
+
+.d{
+    background-image: url("../../images/memory/d.svg");
+}
+
+.e{
+    background-image: url("../../images/memory/e.svg");
+}
+
+.f{
+    background-image: url("../../images/memory/f.svg");
+}
+
+.g{
+    background-image: url("../../images/memory/g.svg");
+}
+
+.h{
+    background-image: url("../../images/memory/h.svg");
+}
+
+.i{
+    background-image: url("../../images/memory/i.svg");
+}
+
+.j{
+    background-image: url("../../images/memory/j.svg");
+}
+
+.k{
+    background-image: url("../../images/memory/k.svg");
+}
+
+.l{
+    background-image: url("../../images/memory/l.svg");
+}
