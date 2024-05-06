@@ -27,7 +27,7 @@ const NavPanel = ({theme, setTheme, cards, setCards}) => {
 
     return(
         <nav className={isSticky ? style.sticky : ''}>
-            <Link to={'/GameProject/'} className={style['logo-link']}>Game Project</Link>
+            <Link to={'/GamesProject/'} className={style['logo-link']}>Game Project</Link>
             <div className={style["nav-element_right"]}>
                 <div className={style.mode} onClick={changeMode}>
                     <img src={theme === 'dark' ? 'icons/moon.svg' : 'icons/sun.svg'} className={style.icon}  alt={'icon'}/>
