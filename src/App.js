@@ -12,18 +12,18 @@ import Memory from "./pages/Memory";
 function App() {
 
     const startCards = [
-        {name: "Shulte", image: "images/cards/toy-photo-camera-back.svg", url: 'shulte', size: 1, color: 'base'},
-        {name: "Сапёр", image: "images/cards/entertaining-game.svg", url: 'minesweeper', size: 1, color: 'base'},
-        {name: "Память", image: "images/cards/shapes-educational-toy.svg", url: 'memory', size: 1, color: 'base'},
-        {name: "Викторина", image: "images/cards/abc-educational-book.svg", url: 'quiz', size: 1, color: 'base'},
-        {name: "Судоку", image: "images/cards/games-machine.svg", url: 'inProgress', size: 1, color: 'base'},
-        {name: "Set", image: "images/cards/toy-shapes.svg", url: 'inProgress', size: 1, color: 'base'},
-        {name: "Takuzu", image: "images/cards/puzzle-piece-shape-handmade-draw.svg", url: 'inProgress', size: 1, color: 'base'},
-        {name: "Математика", image: "images/cards/worm-animal-toy.svg", url: 'inProgress', size: 1, color: 'base'},
-        {name: "Поиск слова", image: "images/cards/funny-toy-robot.svg", url: 'inProgress', size: 1, color: 'base'},
-        {name: "Анаграмма", image: "images/cards/bouncing-ball-toy.svg", url: 'inProgress', size: 1, color: 'base'},
-        {name: "Camp", image: "images/cards/bear-toy.svg", url: 'inProgress', size: 1, color: 'base'},
-        {name: "Kuromasu", image: "images/cards/toy-object.svg", url: 'inProgress', size: 1, color: 'base'}
+        {name: "Shulte", image: "images/cards/toy-photo-camera-back.svg", url: '/GameProject/shulte', size: 1, color: 'base'},
+        {name: "Сапёр", image: "images/cards/entertaining-game.svg", url: '/GameProject/minesweeper', size: 1, color: 'base'},
+        {name: "Память", image: "images/cards/shapes-educational-toy.svg", url: '/GameProject/memory', size: 1, color: 'base'},
+        {name: "Викторина", image: "images/cards/abc-educational-book.svg", url: '/GameProject/quiz', size: 1, color: 'base'},
+        {name: "Судоку", image: "images/cards/games-machine.svg", url: '/GameProject/inProgress', size: 1, color: 'base'},
+        {name: "Set", image: "images/cards/toy-shapes.svg", url: '/GameProject/inProgress', size: 1, color: 'base'},
+        {name: "Takuzu", image: "images/cards/puzzle-piece-shape-handmade-draw.svg", url: '/GameProject/inProgress', size: 1, color: 'base'},
+        {name: "Математика", image: "images/cards/worm-animal-toy.svg", url: '/GameProject/inProgress', size: 1, color: 'base'},
+        {name: "Поиск слова", image: "images/cards/funny-toy-robot.svg", url: '/GameProject/inProgress', size: 1, color: 'base'},
+        {name: "Анаграмма", image: "images/cards/bouncing-ball-toy.svg", url: '/GameProject/inProgress', size: 1, color: 'base'},
+        {name: "Camp", image: "images/cards/bear-toy.svg", url: '/GameProject/inProgress', size: 1, color: 'base'},
+        {name: "Kuromasu", image: "images/cards/toy-object.svg", url: '/GameProject/inProgress', size: 1, color: 'base'}
     ]
 
     const [cards, setCards] = useState(
@@ -46,7 +46,7 @@ function App() {
       <Theme className={theme === 'dark' ? "App dark-mode" : "App"} preset={presetGpnDefault}>
             <BrowserRouter>
                 <Routes >
-                    <Route path="/" element={
+                    <Route path="/GameProject/" element={
                         <Main
                             theme={theme}
                             setTheme={setTheme}
@@ -55,35 +55,35 @@ function App() {
                             setCards={setCards}
                         />}
                     />
-                    <Route path="shulte" element={
+                    <Route path="/GameProject/shulte" element={
                         <Shulte theme={theme}
                                 setTheme={setTheme}
                                 cards={cards}
                                 setCards={setCards}
                         />}
                     />
-                    <Route path="minesweeper" element={
+                    <Route path="/GameProject/minesweeper" element={
                         <Minesweeper theme={theme}
                                      setTheme={setTheme}
                                     cards={cards}
                                     setCards={setCards}
                         />}
                     />
-                    <Route path="quiz" element={
+                    <Route path="/GameProject/quiz" element={
                         <Countries theme={theme}
                                    setTheme={setTheme}
                                      cards={cards}
                                      setCards={setCards}
                         />}
                     />
-                    <Route path="memory" element={
+                    <Route path="/GameProject/memory" element={
                         <Memory theme={theme}
                                    setTheme={setTheme}
                                    cards={cards}
                                    setCards={setCards}
                         />}
                     />
-                    <Route path="inProgress" element={
+                    <Route path="/GameProject/inProgress" element={
                         <InProgress theme={theme}
                                     setTheme={setTheme}
                                      cards={cards}
